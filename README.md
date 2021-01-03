@@ -11,7 +11,9 @@ The main advantage of composite design pattern is that-
 1.	Village is a composite object of house, tree and water_source. Village acts independently of the leaf nodes.
 2.	House, tree and water_source are composite objects as well. They are also independent of village and leaf nodes as well
 3.	And at the leaf level rectangle, square, line, etc are independent of the composite objects
+
 So in a nutshell, here all the shapes may be composite or leaf, they can work independently.
+
 Code:
 1.	Firstly we have an interface named shape and a method named showShapeType().
 2.	Secondly we have two classes leaf and composite. Both of them implements the shape interface. Both leaf and composite have their name. For example: leaf can have name rectangle, line, etc and composite may have name house, tree, village, etc. And both of the leaf and composite classes override the method showShapeType() of their parent class.
